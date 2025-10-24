@@ -1,0 +1,1 @@
+savedcmd_/home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.ko := arm-linux-gnueabihf-ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.ko /home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.o /home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.mod.o /home/ubuntu/pi_kernel/src/uart_bsp/.module-common.o
