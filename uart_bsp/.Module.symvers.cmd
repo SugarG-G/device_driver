@@ -1,1 +1,0 @@
-savedcmd_/home/ubuntu/pi_kernel/src/uart_bsp/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ubuntu/pi_kernel/src/uart_bsp/Module.symvers -T /home/ubuntu/pi_kernel/src/uart_bsp/modules.order -i Module.symvers -e 

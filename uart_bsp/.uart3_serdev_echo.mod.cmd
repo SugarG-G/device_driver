@@ -1,1 +1,0 @@
-savedcmd_/home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.mod := printf '%s\n'   uart3_serdev_echo.o | awk '!x[$$0]++ { print("/home/ubuntu/pi_kernel/src/uart_bsp/"$$0) }' > /home/ubuntu/pi_kernel/src/uart_bsp/uart3_serdev_echo.mod
