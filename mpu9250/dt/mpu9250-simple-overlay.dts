@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+&{/} {
+    compatible = "brcm,bcm2711";
+};
+
+&i2c1 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    mpu9250@68 {
+        compatible = "yourco,mpu9250-simple";
+        reg = <0x68>;
+        // 필요 시 IRQ 연결:
+        // interrupt-parent = <&gpio>;
+        // interrupts = <25 2>;
+    };
+};
