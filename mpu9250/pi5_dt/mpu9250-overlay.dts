@@ -1,0 +1,21 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2712";
+
+    /* i2c1 버스에 0x68 장치 추가. AD0=VDD면 reg=<0x69>; 로 변경 */
+    fragment@0 {
+        target = <&i2c1>;
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+
+            my_mpu9250: my_mpu9250@68 {
+                compatible = "myvendor,my-mpu9250";
+                reg = <0x68>;
+                /* 처음에는 IRQ 없이 폴링로 테스트. 이후 DRDY 핀 연동 가능 */
+            };
+        };
+    };
+};
